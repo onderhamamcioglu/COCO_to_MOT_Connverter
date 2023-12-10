@@ -31,7 +31,6 @@ def coco_to_mot(coco_annotations, fairmot_annotations):
             frame_info['ann'].append({
                 "track_id": track_id,
                 "bbox": [bbox[0], bbox[1], bbox[0] + bbox[2], bbox[1] + bbox[3]]
-                # Convert COCO format to FairMOT format
             })
 
         fairmot_data.append(frame_info)
